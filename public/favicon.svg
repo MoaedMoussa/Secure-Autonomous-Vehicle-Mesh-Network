@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#090D16"/>
+  <circle cx="32" cy="32" r="24" stroke="#06B6D4" stroke-width="2" stroke-dasharray="3 3" opacity="0.6"/>
+  <circle cx="32" cy="32" r="16" stroke="#3B82F6" stroke-width="2" opacity="0.8"/>
+  <circle cx="32" cy="32" r="6" fill="#10B981"/>
+  <!-- V2X radar signal arcs -->
+  <path d="M22 22 C28 16, 36 16, 42 22" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M16 16 C25 8, 39 8, 48 16" stroke="#0284C7" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <!-- Cryptographic lock badge -->
+  <rect x="42" y="40" width="14" height="12" rx="3" fill="#10B981"/>
+  <path d="M45 40 V36 A4 4 0 0 1 53 36 V40" stroke="#10B981" stroke-width="2" fill="none"/>
+  <!-- Vehicle outline -->
+  <path d="M26 36 L28 29 L36 29 L38 36 Z" fill="#E2E8F0"/>
+  <rect x="24" y="36" width="16" height="8" rx="2" fill="#94A3B8"/>
+  <circle cx="27" cy="44" r="2.5" fill="#334155"/>
+  <circle cx="37" cy="44" r="2.5" fill="#334155"/>
+</svg>

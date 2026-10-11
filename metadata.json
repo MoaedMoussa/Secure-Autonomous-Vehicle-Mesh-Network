@@ -1,0 +1,6 @@
+{
+  "name": "V2X-SecNet: Secure Autonomous Vehicle Mesh Network",
+  "description": "Real-time zero-traffic-light intersection coordination platform with IEEE 1609.2 / ECC encrypted V2X vehicle telemetry, Docker node simulation, and collision avoidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

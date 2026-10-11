@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V2X-SecNet – Secure Autonomous Vehicle Mesh & Real-Time Intersection Coordination</title>
+    <meta
+      name="description"
+      content="Real-time zero-traffic-light intersection coordination platform with IEEE 1609.2 / ECC encrypted V2X vehicle telemetry, Docker node simulation, and collision avoidance."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" id="canonical-tag" href="https://v2x-secnet.org/" />
+
+    <!-- Open Graph Social Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="V2X-SecNet Simulation Platform" />
+    <meta property="og:title" content="V2X-SecNet – Secure Autonomous Vehicle Mesh & Real-Time Intersection Coordination" />
+    <meta
+      property="og:description"
+      content="Simulate dynamic autonomous vehicle coordination without traffic signals using ECDSA-signed SAE J2735 telemetry, low-latency WebSockets, and Dockerized Java nodes."
+    />
+    <meta property="og:image" content="/og-image.svg" />
+    <meta property="og:url" content="https://v2x-secnet.org/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="V2X-SecNet – Secure Autonomous Vehicle Mesh & Real-Time Intersection Coordination" />
+    <meta
+      name="twitter:description"
+      content="Simulate dynamic autonomous vehicle coordination without traffic signals using ECDSA-signed SAE J2735 telemetry, low-latency WebSockets, and Dockerized Java nodes."
+    />
+    <meta name="twitter:image" content="/og-image.svg" />
+
+    <!-- Structured Data (JSON-LD): WebApplication + LocalBusiness + BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://v2x-secnet.org/#webapp",
+          "name": "V2X-SecNet Real-Time Simulator",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "All modern browsers, Linux/Docker for nodes",
+          "description": "Real-time zero-traffic-light intersection coordination platform with IEEE 1609.2 / ECC encrypted V2X vehicle telemetry and Docker containerized nodes.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://v2x-secnet.org/#lab",
+          "name": "V2X Autonomous Cyber-Physical Security Systems Lab",
+          "description": "Academic and industrial research laboratory advancing Car-to-Car Communication, V2X security, and zero-light intersection optimization.",
+          "image": "https://v2x-secnet.org/og-image.svg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "400 Cybernetics Parkway, Autonomous Systems Center",
+            "addressLocality": "Silicon Valley",
+            "addressRegion": "CA",
+            "postalCode": "94025",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 37.4852,
+            "longitude": -122.1483
+          },
+          "telephone": "+1-650-555-0199",
+          "priceRange": "$$",
+          "openingHours": "Mo-Fr 08:30-18:00"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://v2x-secnet.org/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://v2x-secnet.org/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Live Simulation",
+              "item": "https://v2x-secnet.org/#simulation"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Security & Cryptography",
+              "item": "https://v2x-secnet.org/#security"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Curriculum Alignment",
+              "item": "https://v2x-secnet.org/#curriculum"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

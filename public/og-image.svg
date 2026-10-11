@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050B14"/>
+      <stop offset="50%" stop-color="#0B1528"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <radialGradient id="radar" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Radar Grid on Right -->
+  <g transform="translate(850, 315)">
+    <circle r="220" fill="url(#radar)"/>
+    <circle r="220" stroke="#1E293B" stroke-width="2" fill="none"/>
+    <circle r="160" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+    <circle r="100" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.4" fill="none"/>
+    <circle r="40" stroke="#10B981" stroke-width="2" fill="none"/>
+    <line x1="-240" y1="0" x2="240" y2="0" stroke="#1E293B" stroke-width="2"/>
+    <line x1="0" y1="-240" x2="0" y2="240" stroke="#1E293B" stroke-width="2"/>
+    <!-- Intersection lanes representation -->
+    <rect x="-35" y="-240" width="70" height="480" fill="#0F172A" opacity="0.6"/>
+    <rect x="-240" y="-35" width="480" height="70" fill="#0F172A" opacity="0.6"/>
+    <!-- Simulated vehicles -->
+    <circle cx="0" cy="-90" r="10" fill="#10B981"/>
+    <circle cx="85" cy="0" r="10" fill="#38BDF8"/>
+    <circle cx="-120" cy="0" r="10" fill="#F59E0B"/>
+    <circle cx="0" cy="110" r="10" fill="#8B5CF6"/>
+  </g>
+
+  <!-- Left Content -->
+  <g transform="translate(90, 110)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="280" height="36" rx="18" fill="#1E293B" stroke="#334155"/>
+    <circle cx="18" cy="18" r="6" fill="#10B981"/>
+    <text x="34" y="23" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" letter-spacing="1">IEEE 1609.2 / SAE J2735 SECURE V2X</text>
+
+    <!-- Main Title -->
+    <text x="0" y="110" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" letter-spacing="-1">V2X-SecNet</text>
+    <text x="0" y="170" fill="url(#accent)" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="700">Autonomous Real-Time Mesh &amp; Merging</text>
+
+    <!-- Subtitle / Value Prop -->
+    <text x="0" y="240" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="400">Zero-traffic-light collision avoidance platform with dynamic slot</text>
+    <text x="0" y="272" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="400">reservation, ECC/RSA digital signatures, and Dockerized Java vehicle nodes.</text>
+
+    <!-- Feature Tags -->
+    <g transform="translate(0, 340)">
+      <rect x="0" y="0" width="170" height="42" rx="8" fill="#111827" stroke="#374151"/>
+      <text x="18" y="26" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="15" font-weight="600">⚡ 2.4ms Low Latency</text>
+
+      <rect x="186" y="0" width="190" height="42" rx="8" fill="#111827" stroke="#374151"/>
+      <text x="202" y="26" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="15" font-weight="600">🔒 ECDSA NIST P-256</text>
+
+      <rect x="392" y="0" width="180" height="42" rx="8" fill="#111827" stroke="#374151"/>
+      <text x="408" y="26" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="15" font-weight="600">🐳 Docker Microservices</text>
+    </g>
+  </g>
+</svg>

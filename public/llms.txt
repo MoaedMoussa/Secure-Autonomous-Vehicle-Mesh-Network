@@ -1,0 +1,28 @@
+# V2X-SecNet: Secure Vehicle-to-Everything Real-Time Communication Network
+
+> High-assurance real-time simulation platform for autonomous vehicle intersection coordination without traffic lights, powered by IEEE 1609.2 / SAE J2735 Basic Safety Messages (BSM), Dockerized Java nodes, and ECC NIST P-256 cryptographic signatures.
+
+## Project Overview
+- Title: V2X-SecNet
+- Purpose: Demonstrate dynamic, safe, real-time merging coordination among autonomous vehicles at intersections with zero traffic signals using low-latency V2X peer-to-peer (V2V) and vehicle-to-infrastructure (V2I/RSU) communication.
+- Core Stack: Java microservice agents, WebSockets / MQTT broker for sub-5ms publish-subscribe telemetry, Docker containerization per vehicle, ECDSA NIST P-256 and RSA-2048 asymmetric encryption, React 19 interactive HUD.
+
+## Academic & Curriculum Mapping
+- Core Curriculum Module: Car-to-Car Communication (0.1.1)
+  - Dedicated Short-Range Communications (DSRC IEEE 802.11p) and Cellular V2X (C-V2X PC5 sidelink)
+  - SAE J2735 Message Sets: Basic Safety Message (BSM CoreData), MAP data, and Signal Phase and Timing (SPaT)
+  - CSMA/CA MAC layer backoff & direct slot reservation
+- Elective Alignment 1: Mobile Security & Applied Cryptography
+  - Hardware Security Modules (HSM) & Secure Elements (SE) simulation
+  - IEEE 1609.2 PKI architecture: Root CA, Pseudonym CA (PCA), and Enrollment Authority (EA)
+  - Digital signature verification per packet (ECDSA with SHA-256)
+  - Defense against Replay Attacks, MITM, GPS Spoofing, and Rogue Vehicle Sybil injection
+- Elective Alignment 2: Real-Time & Communication Systems
+  - Deterministic time-slot reservation and conflict zone trajectory prediction
+  - Hard real-time latency thresholds: Merging decision within <20ms deadline
+  - Cooperative Adaptive Cruise Control (CACC) velocity profiles
+
+## Architecture
+- Nodes: Independent vehicle container instances simulating telemetry generation (velocity, yaw rate, wheel angle, GPS coordinates, brake cylinder pressure).
+- Edge Arbiter: Roadside Unit (RSU) running Virtual First-Come-First-Reserved (FCFR) scheduling with priority override for emergency vehicles.
+- Cryptography: Asymmetric signing of BSM packets, monotonic sequence counter freshness window, certificate validation.
